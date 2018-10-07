@@ -1,3 +1,29 @@
+/* line 6, C:/Users/542/Desktop/Pluralsight/HU/app/assets/stylesheets/home.scss */
+.boxes .media {
+  border: thin solid #ddd;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #eee;
+  position: relative;
+}
+/* line 12, C:/Users/542/Desktop/Pluralsight/HU/app/assets/stylesheets/home.scss */
+.boxes .media .time {
+  position: absolute;
+  right: 10px;
+  color: #666;
+  top: 15px;
+}
+/* line 18, C:/Users/542/Desktop/Pluralsight/HU/app/assets/stylesheets/home.scss */
+.boxes .media .view-answers {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
+/* line 23, C:/Users/542/Desktop/Pluralsight/HU/app/assets/stylesheets/home.scss */
+.boxes .media:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -10,9 +36,10 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
+
 
 .questions-b {
 	margin-bottom: 10px;

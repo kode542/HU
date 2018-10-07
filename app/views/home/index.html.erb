@@ -1,0 +1,27 @@
+<div class="jumbotron">
+		<h3>The Universe is the totality of everything that exists, has existed, or ever will exist.</h3>
+		<p>This Q&A site is dedicated to questions about the history of the Universe</p>
+</div>
+
+<div class="container">
+	<% @questions.each do |q| %>
+		<div class="boxes">
+			<div class="media" data-target="<%= question_path(q) %>">
+				<img class="mr-3" src="<%= q.gravatar %>">
+				<div class="media-body">
+					<h5 class="mt-0"><%= q.email %> asked:</h5>
+					<div class="time d-none d-md-block"><%= time_ago_in_words q.created_at %> ago</div>
+					<div><%= truncate q.body, length: 300 %></div>
+					<div>
+						<a href="<%= question_path(q) %>" class="btn btn-success btn-sm view-answers d-none d-md-block">View Answers</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	<% end %>
+
+
+	<% if @questions.empty? %>
+		<div class="alert alert-primary">Nothing here yet, be the first to ask?</div>
+	<% end %>
+</div>
