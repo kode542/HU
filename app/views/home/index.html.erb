@@ -6,7 +6,7 @@
 <div class="container">
 	<% @questions.each do |q| %>
 		<div class="boxes">
-			<div class="media" data-target="<%= question_path(q) %>">
+			<div class="media question" data-target="<%= question_path(q) %>">
 				<img class="mr-3" src="<%= q.gravatar %>">
 				<div class="media-body">
 					<h5 class="mt-0"><%= q.email %> asked:</h5>

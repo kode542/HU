@@ -1,7 +1,6 @@
 ready = ->
-	$(".media").on "click", ->
+	$(".media.question").on "click", ->
 		document.location = $(this).data("target")
-		console.log($(this).data("target"))
 		return false
 
 	$(".modal").on "shown.bs.modal", ->
