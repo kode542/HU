@@ -13,7 +13,7 @@
 					<div class="time d-none d-md-block"><%= time_ago_in_words q.created_at %> ago</div>
 					<div><%= truncate q.body, length: 300 %></div>
 					<div>
-						<a href="<%= question_path(q) %>" class="btn btn-success btn-sm view-answers d-none d-md-block">View Answers (<%= @answers %>)</a>
+						<a href="<%= question_path(q) %>" class="btn btn-success btn-sm view-answers d-none d-md-block">View Answers (<%= q.answers.count %>)</a>
 					</div>
 				</div>
 			</div>
